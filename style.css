@@ -25,9 +25,12 @@ header:not(#navbar header){border-bottom: 2px solid #121212;width: fit-content;p
 }
 p{font-size: 16px;padding: 6px 0px 2px 0px;}
 ul, ol{padding: 10px 30px;background-color: #e2e2e2;width: fit-content;}
-pre{
+.code{
     padding: 6px 10px;width: fit-content;
     background-color: #121212;color: #e2e2e2;
+    display: flex;
+    width: fit-content;
+    justify-content: space-between;
 }
 
 @media screen and (max-width: 800px) {
@@ -40,7 +43,15 @@ pre{
         position: relative;left: 15px;
         padding: 10px 0px 50px 0px;width: calc(100% - 50px);
     }
-    pre{max-width: 100%;overflow-x: auto;}
+    pre{max-width: 100%;overflow-x: auto; }
 }
 
+code{
+    margin-right: 30px;
+}
 
+.copy-btn {
+    cursor: pointer;
+    color: white;
+    font-size: 20px;
+}
